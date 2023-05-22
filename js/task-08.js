@@ -16,7 +16,9 @@ function onFormSubmit(evt) {
     password,
   };
 
-  console.log(formDate);
+  if (mail !== '' && password !== '') {
+    return console.log(formDate);
+  }
 
   if (mail === '' || password === '') {
     return alert('Пожалуйста, заполните все поля!');
